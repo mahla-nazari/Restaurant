@@ -49,58 +49,51 @@ class Restaurant:
         
         
     #validations______________________________________________________________________
-        if isalpha_isspace(name):
-            pass
-        else:
+        if not(isalpha_isspace(name)):
             print("Enter valid name")
+        
+            
             
             
         
-        if isalpha_isspace(tpy):
-            pass
-        else:
+        if not(isalpha_isspace(tpy)):
             print('Enter valid type')
+        
+            
             
         
         
-        if type(menu)==dict:
-            pass
-        else:
+        if type(menu)!=dict:
             print("Enter valid menu")
             
             
             
-        if isalpha_isspace(location):
-            pass
-        else:
+        if not(isalpha_isspace(location)):
+
             print('Enter valid location')
         
         
         
         
-        if check_phone_number(phone_number):
-            pass
-        else:
+        if not(check_phone_number(phone_number)):
+
             print('Enter valid phone number')
             
             
             
             
-        if type(working_hours)==tuple and len(working_hours)==2:
-            pass
-        else:
+        if type(working_hours)!=tuple and len(working_hours)!=2:
+
             print("Enter the start of working hours and the end of working hours in the main tuple ")
             
         
-        if type(capacity)==int:
-            pass
-        else:
+        if type(capacity)!=int:
+
             print("Enter valid capacity")
         
         
-        if type(delivery)==bool:
-            pass
-        else:
+        if type(delivery)!=bool:
+   
             print("for the delivery ,Enter True or False")
 
 
